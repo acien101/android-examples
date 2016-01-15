@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView android:text="Hello World!" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtrespuesta" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Abrir Activity"
+        android:id="@+id/btnactivity"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/edtTexto"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Abrir Telefono"
+        android:id="@+id/btntwitter"
+        android:layout_below="@+id/btnactivity"
+        android:layout_alignLeft="@+id/btnactivity"
+        android:layout_alignStart="@+id/btnactivity"
+        android:layout_marginTop="43dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Abrir URL"
+        android:id="@+id/btnurl"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/btntwitter"
+        android:layout_alignStart="@+id/btntwitter" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtTexto"
+        android:layout_below="@+id/txtrespuesta"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/btnactivity"
+        android:layout_toStartOf="@+id/btnactivity" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar"
+        android:id="@+id/btnenviar"
+        android:layout_alignBottom="@+id/edtTexto"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
